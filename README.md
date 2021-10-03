@@ -1,6 +1,9 @@
 This is my Lab2 HTML page.
 
-[Part 1 Screenshot](screenshots/Screenshot%202021-10-02%20220337.png)
+Links:
+* [Webpage](https://edeolive.github.io/Lab2/)
+* [Part 1 Screenshot](screenshots/Screenshot%202021-10-02%20220337.png)
+* [Part 2 Text](./part2.txt)
 
 Image, video, and audio are all from royalty-free external sources.
 Favicon is based on SkyNet from Terminator.

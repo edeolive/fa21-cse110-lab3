@@ -1,7 +1,7 @@
-This is my Lab2 HTML page.
+This is my Lab3 HTML page. Link to pages: [https://edeolive.github.io/fa21-cse110-lab3/](https://edeolive.github.io/fa21-cse110-lab3/)
 
 Links:
-* [Published Site](https://edeolive.github.io/Lab2/)
+* [Published Site](https://edeolive.github.io/fa21-cse110-lab3/)
 * [Part 1 Screenshot](screenshots/Screenshot%202021-10-02%20220337.png)
 * [Part 2 Text](./part2.txt)
 

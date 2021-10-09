@@ -1,9 +1,7 @@
-This is my Lab2 HTML page.
+This is my Lab 3 HTML+CSS page.
 
 Links:
-* [Published Site](https://edeolive.github.io/Lab2/)
-* [Part 1 Screenshot](screenshots/Screenshot%202021-10-02%20220337.png)
-* [Part 2 Text](./part2.txt)
+* [Published Site](https://edeolive.github.io/fa21-cse110-lab3/)
 
 Image, video, and audio are all from royalty-free external sources.
 Favicon is based on SkyNet from Terminator.

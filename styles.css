@@ -1,4 +1,7 @@
-* { margin: 0; padding: 0; }
+* {
+	margin: 0;
+	padding: 0;
+}
 
 @media screen and (min-width:2000px) {
 	body {
@@ -10,15 +13,17 @@ body div {
 	margin-bottom: 2%;
 }
 
-h2 ~ details {
+h2~details {
 	margin-left: 10px;
 }
 
-h2 + .container, h2 + #agenda, h2 + img {
+h2+.container,
+h2+#agenda,
+h2+img {
 	margin-top: 10px;
 }
 
-header > p {
+header>p {
 	color: #e5e5e5;
 }
 
@@ -27,7 +32,18 @@ hr {
 	margin-bottom: 10px;
 }
 
-main, section {
+nav {
+	padding: 1em;
+	background-color: #fca311;
+	text-align: center;
+}
+
+nav>a {
+	color: #fff;
+}
+
+main,
+section {
 	margin-left: 1%;
 	margin-right: 1%;
 	margin-top: 3%;
@@ -38,8 +54,9 @@ button:hover {
 	background-color: #fca311;
 }
 
-em, strong {
-	color:hsl(6, 100%, 42%);
+em,
+strong {
+	color: hsl(6, 100%, 42%);
 	text-decoration: underline;
 }
 
@@ -63,7 +80,8 @@ header {
 	background-color: #e5e5e5;
 	padding: 3px 1em 6px 3vw;
 	position: relative;
-	top: auto; left: 23%;
+	top: auto;
+	left: 23%;
 	border: 1px solid black;
 	border-radius: 5px;
 	min-width: 200px;

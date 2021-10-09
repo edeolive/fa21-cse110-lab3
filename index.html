@@ -7,7 +7,26 @@
 	</title>
 	<meta name="description" content="Cyberdyne Systems Corporation">
 	<meta charset="UTF-8">
-	<link rel="icon" href="/Lab2/assets/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="./styles.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+	<style>
+		h1,
+		h2,
+		h3 {
+			font-family: "Roboto", sans-serif;
+		}
+
+		p,
+		li,
+		summary {
+			font-family: Arial, Helvetica, sans-serif;
+		}
+	</style>
 </head>
 
 <body>
@@ -20,8 +39,8 @@
 		<nav>
 			<a href="/Lab2/extras.html">Extras</a>
 		</nav>
-		<section>
-			<h3>Atendees</h3>
+		<section id="attendees">
+			<h3>Attendees</h3>
 			<ul>
 				<li>Miles Dyson</li>
 				<li>Glen VanHerck</li>
@@ -33,22 +52,34 @@
 	<hr>
 	<main>
 		<h2>Agenda items</h2>
-		<h3>Last meeting leftovers</h3>
-		<ol>
-			<li>Neural-net processor testing wrapup</li>
-			<li>NORAD demo prep</li>
-		</ol>
-
-		<h3>New business</h3>
-		<ol>
-			<li>Demo slides prep</li>
-			<li>Tech explanation</li>
-			<li><strong>Skynet safety concerns</strong></li>
-		</ol>
+		<div class="container" id="agenda">
+			<div class="item">
+				<h3>Last meeting leftovers</h3>
+				<ol>
+					<li>Neural-net processor testing wrapup</li>
+					<li>NORAD demo prep</li>
+				</ol>
+			</div>
+			<div class="item">
+				<h3>New business</h3>
+				<ol>
+					<li>Demo slides prep</li>
+					<li>Tech explanation</li>
+					<li><strong>Skynet safety concerns</strong></li>
+				</ol>
+			</div>
+			<div class="item">
+				<h3>Unfinished items</h3>
+				<ol>
+					<li><strong>Skynet safety concerns</strong></li>
+				</ol>
+			</div>
+		</div>
 	</main>
 
 	<section>
 		<h2>Questions and comments</h2>
+		<div class="container">
 		<details>
 			<summary>Push for launch sans testing</summary>
 			<p>We have the <span>NORAD demo</span> coming up soon and won't make it in time
@@ -59,73 +90,86 @@
 		<details>
 			<summary>Consider delaying the launch</summary>
 			<p>We have <b>not</b> done enough testing to launch Skynet.
-				Haven't you guys ever watched <a href="https://www.youtube.com/watch?v=_Wlsd9mljiU"><i>Terminator</i></a>?
+				Haven't you guys ever watched <a
+					href="https://www.youtube.com/watch?v=_Wlsd9mljiU"><i>Terminator</i></a>?
 			</p>
 		</details>
+		</div>
 	</section>
 
 	<section>
 		<h2>Diagrams</h2>
-		<img src="/Lab2/assets/SkyNet.png" alt="Diagram of network" height="200">
+		<img src="assets/SkyNet.png" alt="Diagram of network" height="200">
 	</section>
 	<section>
 		<h2>Meeting recording</h2>
-		<label>Video</label><br>
+		<label class="invisible">Video</label><br>
 		<video height="200" controls>
 			<source src="assets/video.mp4" type="video/mp4">
 		</video><br><br>
 
-		<label>Audio</label><br>
+		<label class="invisible">Audio</label><br>
 		<audio controls>
 			<source src="assets/audio.mp3" type="audio/mp3">
 		</audio>
 	</section>
 	<hr>
+	
 	<section>
-		<h2>Forms</h2>
-		<form>
-			<label>Name:</label>
-			<input type="text"><br><br>
-			<label>Birthday:</label>
-			<input type="date"><br><br>
-			<label>Check Me</label>
-			<input type="checkbox"><br><br>
-			<input type="submit">
-		</form><br>
+		<h2>Forms</h2><br>
+		<div class="gridContainer">
+		<div class="gridItemA">
+			<form>
+				<label>Name:</label>
+				<input type="text"><br><br>
+				<label>Birthday:</label>
+				<input type="date"><br><br>
+				<label>Check Me</label>
+				<input type="checkbox"><br><br>
+				<input type="submit">
+			</form><br>
+		</div>
 
-		<fieldset>
-			<legend>Cats or Dogs?</legend>
+		<div class="gridItemB">
+			<fieldset>
+				<legend>Cats or Dogs?</legend>
 
-			<input type="radio" name="fav_animal">
-			<label>Cats</label>
-			<input type="radio" name="fav_animal">
-			<label>Dogs</label>
-		</fieldset><br>
+				<input type="radio" name="fav_animal">
+				<label>Cats</label>
+				<input type="radio" name="fav_animal">
+				<label>Dogs</label>
+			</fieldset><br>
+		</div>
 
-		<textarea>I like dogs because they are playful</textarea><br><br>
+		<div class="gridItemC">
+			<textarea>I like dogs because they are playful</textarea><br><br>
+		</div>
 
-		<form>
-			<label>Favorite Color:</label>
-			<input list="colors">
-			<datalist id="colors">
-				<option value="Red">
-				<option value="Green">
-				<option value="Blue">
-			</datalist>
-			<button type="submit">Submit</button>
-		</form><br>
+		<div class="gridItemD">
+			<form>
+				<label>Favorite Color:</label>
+				<input list="colors">
+				<datalist id="colors">
+					<option value="Red">
+					<option value="Green">
+					<option value="Blue">
+				</datalist>
+				<button type="submit">Submit</button>
+			</form><br>
+		</div>
 
-		<form><label>Choose an OS:</label>
-			<select>
-				<option>Windows</option>
-				<option>OSX</option>
-				<option>Linux</option>
-				<option>Other</option>
-			</select>
-			<button type="button">Click this button</button>
-		</form>
-
-
+		<div class="gridItemE">
+			<form><label>Choose an OS:</label>
+				<select>
+					<option>Windows</option>
+					<option>OSX</option>
+					<option>Linux</option>
+					<option>Other</option>
+				</select>
+				<button type="button">Click this button</button>
+			</form>
+		</div>
+		</div>
 
 	</section>
 </body>
